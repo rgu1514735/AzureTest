@@ -13,17 +13,13 @@ echo "tobi";
 
     for($i = 0; $i<sizeof($num); $i++)
     {
-        if($num[$i] > 30)
+        if($num[$i] > 50)
         {
-            echo $num[$i]." is greater than 30 <br/>";
+            echo $num[$i]." is greater than 50 <br/>";
         }
-        elseif($num[$i] > 50)
+        else
         {
-            echo $num[$i]." is greater than 50<br/>";
-        }
-        elseif($num[$i] < 30)
-        {
-            echo $num[$i]." is lesser than 30<br/>";
+            echo $num[$i]." is lesser than 50<br/>";
         }
     }
 ?>
