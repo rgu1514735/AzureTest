@@ -9,15 +9,22 @@ echo "tobi";
 ?>
 
 <?php
-    $num = 28;
+    $num = array(12,45,23,67,83,67,23,45,69,24,51,68,48);
 
-    if($num >10)
+    for($i = 0; $i<sizeof($num); $i++)
     {
-        echo $num."is greater than 10";
-    }
-    else
-    {
-        echo $num."is lesser than 30";
+        if($num[$i] > 30)
+        {
+            echo $num[$i]." is greater than 30";
+        }
+        elseif($num[$i] > 50)
+        {
+            echo $num[$i]." is greater than 50";
+        }
+        elseif($num[$i] < 30)
+        {
+            echo $num[$i]." is lesser than 30";
+        }
     }
 ?>
 
