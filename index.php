@@ -15,15 +15,15 @@ echo "tobi";
     {
         if($num[$i] > 30)
         {
-            echo $num[$i]." is greater than 30";
+            echo $num[$i]." is greater than 30 <br/>";
         }
         elseif($num[$i] > 50)
         {
-            echo $num[$i]." is greater than 50";
+            echo $num[$i]." is greater than 50<br/>";
         }
         elseif($num[$i] < 30)
         {
-            echo $num[$i]." is lesser than 30";
+            echo $num[$i]." is lesser than 30<br/>";
         }
     }
 ?>
