@@ -2,26 +2,19 @@
 <head>
 </head>
 <body>
-<?php
-echo "Hello world";
-echo "<br/>";
-echo "tobi";
-?>
+<form style="margin-left: 300px;" method="post" action="index.php">
+    <label> please input a number if it's odd or even</label>
+    <input type="text" max="30" name="num"><br/>
+
+    <input type="submit" value="Check">
+
+</form>
 
 <?php
-    $num = array(12,45,23,67,83,67,23,45,69,24,51,68,48);
+    $num = $_POST['num'];
+    echo $num;
 
-    for($i = 0; $i<sizeof($num); $i++)
-    {
-        if($num[$i] > 50)
-        {
-            echo $num[$i]." is greater than 50 <br/>";
-        }
-        else
-        {
-            echo $num[$i]." is lesser than 50<br/>";
-        }
-    }
+
 ?>
 
 </body>
